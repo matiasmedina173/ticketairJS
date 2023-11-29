@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Ticket Air</title>
+  </head>
+  <body>
+    <header class="bg-primary text-white text-center py-3">
+      <h1>TICKET AIR - TU DESTINO ESTÁ AQUÍ</h1>
+    </header>
+
+    <main class="container mt-4">
+      <main class="container mt-4">
+        <section class="search-form">
+          <h2 class="mb-4">
+            Bienvenido a Ticket Air. Somos el sitio web donde encontrarás los
+            vuelos que mejor se ajusten a tus medidas y a los precios mas
+            convenientes!
+          </h2>
+        </section>
+
+        <section id="registro" class="mt-4">
+          <section id="registro" class="mt-4">
+            <h2 id="encabezadoRegistro">Registro de Usuario</h2>
+          </section>
+          <div id="mensajeBienvenida" style="display: none"></div>
+          <div id="mensajeError" style="display: none"></div>
+          <form id="registroForm">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="nombre">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  placeholder="Nombre"
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="email">Correo Electrónico</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Correo Electrónico"
+                />
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="registrarUsuario()"
+            >
+              Registrarse
+            </button>
+          </form>
+        </section>
+      </main>
+
+      <section class="search-form">
+        <h2 class="mb-4">Buscar Vuelos</h2>
+
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="origin">Origen</label>
+              <input
+                type="text"
+                class="form-control"
+                id="origin"
+                placeholder="Ciudad de origen"
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="destination">Destino</label>
+              <input
+                type="text"
+                class="form-control"
+                id="destination"
+                placeholder="Ciudad de destino"
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="departureDate">Fecha de Salida</label>
+              <input type="date" class="form-control" id="departureDate" />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="returnDate">Fecha de Regreso</label>
+              <input type="date" class="form-control" id="returnDate" />
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Buscar Vuelos</button>
+        </form>
+      </section>
+      <br />
+      <br />
+      <br />
+      <br />
+    </main>
+
+    <footer class="bg-primary text-white text-center py-3">
+      <p>&copy; 2023 Reservas de Vuelos en Línea</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
